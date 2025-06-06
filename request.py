@@ -2,9 +2,11 @@ import requests
 
 
 def create_new_dict(iterable):
-    return map(
-        lambda key: {"id": key["id"], "name": key["name"], "tags": key["tags"]},
-        iterable,
+    return list(
+        map(
+            lambda key: {"id": key["id"], "name": key["name"], "tags": key["tags"]},
+            iterable,
+        )
     )
 
 
