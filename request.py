@@ -1,15 +1,14 @@
 import requests
 
 
+def create_new_dict(iterable):
+    return map(
+        lambda key: {"id": key["id"], "name": key["name"], "tags": key["tags"]},
+        iterable,
+    )
+
+
 def fetch(url):
     response = requests.get(url).json()
     data = response["data"].values()
-    new_list = map(
-        lambda key: {"id": key["id"], "name": key["name"], "tags": key["tags"]},
-        data,
-    )
-    # return list(response["data"].values())
-    print(list(new_list))
-
-
-fetch("http://ddragon.leagueoflegends.com/cdn/12.6.1/data/en_US/champion.json")
+    return create_new_dict(data)
