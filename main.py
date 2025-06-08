@@ -1,4 +1,5 @@
 from request import fetch
+from helper_functions import append_string, pad_string
 
 
 def main():
@@ -11,22 +12,21 @@ def main():
     def format_list_of_champions(iterable):
         str = ""
         for item in iterable:
-            str += f"{item[0]}. {item[1]['name']} | "
-            if item[0] % 5 == 0:
-                str += "\n"
+            # str += append_string(pad_string(item[1]["name"]), item[0])
+            # if item[0] % 3 == 0:
+            #     str += "\n"
+            print(append_string(pad_string(item[1]["name"]), item[0]))
+            # print(pad_string(item[1]["name"]))
 
-        return str
+        # return str
 
     print(format_list_of_champions(counted))
-    highest_count = 0
-    longest_name = ""
-    for champ in champion_list:
-        if len(champ["name"]) > highest_count:
-            highest_count = len(champ["name"])
-            longest_name = champ["name"]
-        continue
-    print(f"longest: {longest_name}\nlength: {highest_count}")
+    # TODO: find out out to make each entry to the str in format function the same length
+    # maybe while loop that checks if the string is == to the longest names length
+    # if not the same add spaces to the start and maybe end
 
+
+# "111._" "_|_"
 
 if __name__ == "__main__":
     main()
