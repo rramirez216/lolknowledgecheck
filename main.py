@@ -12,13 +12,13 @@ def main():
     def format_list_of_champions(iterable):
         str = ""
         for item in iterable:
-            # str += append_string(pad_string(item[1]["name"]), item[0])
-            # if item[0] % 3 == 0:
-            #     str += "\n"
-            print(append_string(pad_string(item[1]["name"]), item[0]))
+            str += append_string(pad_string(item[1]["name"]), item[0])
+            if item[0] % 5 == 0:
+                str += "\n"
+            # print(append_string(pad_string(item[1]["name"]), item[0]))
             # print(pad_string(item[1]["name"]))
 
-        # return str
+        return str
 
     print(format_list_of_champions(counted))
     # TODO: find out out to make each entry to the str in format function the same length
