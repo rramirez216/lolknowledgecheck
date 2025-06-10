@@ -18,6 +18,6 @@ def pad_string(str):
     return str
 
 
-def sort_list(iterable, sort_by):
+def filter_list(iterable, tag):
     pass
-    #
+    # filter by the tag and return the filtered list
