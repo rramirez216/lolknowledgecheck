@@ -1,5 +1,6 @@
 from request import fetch
-from helper_functions import append_string, pad_string, print_first_question
+from helper_functions import append_string, pad_string
+from inputs import choose_selection_method
 
 
 def main():
@@ -17,8 +18,8 @@ def main():
                 string += "\n"
         return string
 
-    print_first_question()
-    print(format_list_of_champions(counted))
+    choose_selection_method()
+    # print(format_list_of_champions(counted))
     # TODO: create a sort function to sort by tags
 
 
