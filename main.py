@@ -1,5 +1,5 @@
 from request import fetch
-from helper_functions import append_string, pad_string
+from helper_functions import append_string, pad_string, print_first_question
 
 
 def main():
@@ -17,7 +17,9 @@ def main():
                 str += "\n"
         return str
 
+    print_first_question()
     print(format_list_of_champions(counted))
+    # TODO: create a sort function to sort by tags
 
 
 if __name__ == "__main__":
