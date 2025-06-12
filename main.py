@@ -10,12 +10,12 @@ def main():
     counted = list(enumerate(champion_list, 1))
 
     def format_list_of_champions(iterable):
-        str = ""
+        string = ""
         for item in iterable:
-            str += append_string(pad_string(item[1]["name"]), item[0])
+            string += append_string(pad_string(item[1]["name"]), item[0])
             if item[0] % 5 == 0:
-                str += "\n"
-        return str
+                string += "\n"
+        return string
 
     print_first_question()
     print(format_list_of_champions(counted))
