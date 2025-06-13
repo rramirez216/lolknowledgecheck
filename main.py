@@ -1,6 +1,6 @@
 from request import fetch
 from helper_functions import append_string, pad_string
-from inputs import choose_selection_method
+from inputs import choose_selection_method, choose_total_champions, choose_filter_option
 
 
 def main():
@@ -19,8 +19,8 @@ def main():
         return string
 
     choose_selection_method()
-    # print(format_list_of_champions(counted))
-    # TODO: create a sort function to sort by tags
+    choose_total_champions()
+    choose_filter_option()
 
 
 if __name__ == "__main__":
