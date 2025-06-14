@@ -25,5 +25,5 @@ def choose_filter_option():
     print(select_filter_one)
     print("".join([f"{pair[0]}. {pair[1]}  " for pair in pairs]))
     selected_option = input(select_filter_two)
-    print("filter by:", selected_option)
+    print("\n filter by:", selected_option)
     print("\n\n")
