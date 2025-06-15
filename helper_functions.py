@@ -19,9 +19,7 @@ def pad_string(str):
 
 
 def filter_list(iterable, tag):
-    pass
+    if tag == "All":
+        return iterable
+
     # filter by the tag and return the filtered list
-
-
-def print_first_question():
-    print("**** filter list??******")
