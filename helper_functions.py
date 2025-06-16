@@ -23,3 +23,7 @@ def filter_list(iterable, tag):
         return iterable
 
     # filter by the tag and return the filtered list
+
+
+def randomly_pick_champions():
+    pass
