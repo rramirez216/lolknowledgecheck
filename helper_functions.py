@@ -10,12 +10,12 @@ def append_string(name, count):
     return preppend_string(new_str)
 
 
-def pad_string(str):
-    str = str
-    length = len(str)
+def pad_string(string):
+    string = string
+    length = len(string)
     if length < 14:
-        str = str.ljust(14)
-    return str
+        string = str.ljust(14)
+    return string
 
 
 def filter_list(iterable, tag):
