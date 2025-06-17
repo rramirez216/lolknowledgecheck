@@ -18,9 +18,12 @@ def main():
                 string += "\n"
         return string
 
-    choose_selection_method()
-    choose_total_champions()
-    choose_filter_option()
+    selection_method = choose_selection_method()
+    if selection_method.upper() == "R":
+        choose_total_champions()
+        choose_filter_option()
+    elif selection_method.upper() == "M":
+        format_list_of_champions(counted)
 
 
 if __name__ == "__main__":
