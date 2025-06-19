@@ -14,7 +14,7 @@ def pad_string(string):
     string = string
     length = len(string)
     if length < 14:
-        string = str.ljust(14)
+        string = string.ljust(14)
     return string
 
 
@@ -27,3 +27,4 @@ def filter_list(iterable, tag):
 
 def randomly_pick_champions():
     pass
+    #
