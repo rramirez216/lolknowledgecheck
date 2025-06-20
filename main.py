@@ -7,8 +7,8 @@ def main():
     champion_list = fetch(
         "http://ddragon.leagueoflegends.com/cdn/15.11.1/data/en_US/champion.json"
     )
-
     counted = list(enumerate(champion_list, 1))
+    total_and_filter_picks = None
 
     def format_list_of_champions(iterable):
         string = ""
@@ -20,10 +20,10 @@ def main():
 
     selection_method = choose_selection_method()
     if selection_method.upper() == "R":
-        choose_total_champions()
-        choose_filter_option()
+        total_and_filter_picks = (choose_total_champions(), choose_filter_option())
+        print(total_and_filter_picks)
     elif selection_method.upper() == "M":
-        format_list_of_champions(counted)
+        print(format_list_of_champions(counted))
 
 
 if __name__ == "__main__":
