@@ -21,10 +21,9 @@ def pad_string(string):
 def filter_list(iterable, tag):
     if tag == "All":
         return iterable
+    return list(filter(lambda champs: tag in champs["tags"], iterable))
 
-    # filter by the tag and return the filtered list
 
-
-def randomly_pick_champions():
+def randomly_pick_champions(champs, options):
     pass
     #
