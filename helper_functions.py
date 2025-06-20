@@ -1,3 +1,6 @@
+from random import randrange
+
+
 def append_string(name, count):
     new_str = f"{name} | "
     count = f"{str(count)}."
