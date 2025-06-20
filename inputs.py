@@ -18,6 +18,7 @@ def choose_total_champions():
     total = input(total_champions_prompt)
     print(total)
     print("\n\n")
+    return total
 
 
 def choose_filter_option():
@@ -27,3 +28,4 @@ def choose_filter_option():
     selected_option = input(select_filter_two)
     print("\n filter by:", selected_option)
     print("\n\n")
+    return roles_list[int(selected_option) - 1]
