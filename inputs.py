@@ -18,7 +18,13 @@ def choose_total_champions():
     total = input(total_champions_prompt)
     print(total)
     print("\n\n")
-    return total
+    match total:
+        case "1":
+            return 5
+        case "2":
+            return 10
+        case "3":
+            return 15
 
 
 def choose_filter_option():
