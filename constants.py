@@ -1,4 +1,4 @@
-roles_list = ["All", "support", "Marksman", "Mage", "Assassin", "Tank", "Fighter"]
+roles_list = ["All", "Support", "Marksman", "Mage", "Assassin", "Tank", "Fighter"]
 random_amount_list = [(1, 5), (2, 10), (3, 15)]
 selection_prompt = (
     "How would you like to select the champions for your test?\n"
