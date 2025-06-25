@@ -25,7 +25,6 @@ def main():
     selection_method = choose_selection_method()
     if selection_method.upper() == "R":
         total_and_filter_picks = (choose_total_champions(), choose_filter_option())
-        # print(randomly_pick_champions(champion_list, total_and_filter_picks))
         randomly_pick_champions(champion_list, total_and_filter_picks)
     elif selection_method.upper() == "M":
         print(format_list_of_champions(counted))
