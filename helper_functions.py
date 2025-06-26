@@ -36,7 +36,6 @@ def filter_list(iterable, tag):
 def randomly_pick_champions(champ_list, options_tuple):
     print(len(champ_list), options_tuple)
     filtered_list = filter_list(champ_list, options_tuple[1])
-    # print("filtered:", filtered_list)
     new_champ_list = []
     for i in range(options_tuple[0]):
         new_champ_list.append(filtered_list[randrange(len(filtered_list))])
