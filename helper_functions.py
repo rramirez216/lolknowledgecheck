@@ -41,6 +41,3 @@ def randomly_pick_champions(champ_list, options_tuple):
         new_champ_list.append(filtered_list[randrange(len(filtered_list))])
     print(new_champ_list)
     return new_champ_list
-
-
-# TODO: figure out why the Error "empty range for randrange()" is being printed
