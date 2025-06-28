@@ -24,7 +24,6 @@ def pad_string(string):
 def filter_list(iterable, tag):
     if tag == "All":
         return iterable
-    print("we got this far")
 
     def tag_filter(champ):
         is_true = tag in champ["tags"]
