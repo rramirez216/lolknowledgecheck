@@ -13,5 +13,3 @@ total_champions_prompt = (
 )
 select_filter_one = "Which option would you like to filter by, if none select 'All':"
 select_filter_two = "Enter your choice (1-7):  "
-
-# not feeling it
